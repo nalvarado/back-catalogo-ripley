@@ -1,0 +1,42 @@
+{
+  "name": "back-catalogo-ripley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/server.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.5",
+    "dotenv": "^5.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jade": "^1.11.0",
+    "moment": "^2.21.0",
+    "morgan-body": "^2.4.0",
+    "redis": "^2.8.0",
+    "sentry": "^0.1.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "jest": "^24.8.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js --fix",
+    "start": "node -r dotenv/config app/server.js",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "npm": "5.6.0"
+  }
+}
