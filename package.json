@@ -12,7 +12,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "jade": "^1.11.0",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "morgan-body": "^2.4.0",
     "redis": "^2.8.0",
     "sentry": "^0.1.2",
